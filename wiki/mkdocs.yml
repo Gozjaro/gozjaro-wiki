@@ -1,0 +1,41 @@
+site_name: Gozjaro Wiki
+site_url: https://gozjaro.github.io/gozjaro-wiki/
+site_description: Gozjaro Linux 官方文档
+repo_name: Gozjaro/gozjaro-wiki
+repo_url: https://github.com/Gozjaro/gozjaro-wiki
+edit_uri: edit/master/wiki/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:
+  - 首页: index.md
